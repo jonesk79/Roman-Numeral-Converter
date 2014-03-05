@@ -2,8 +2,8 @@ def roman_numeral_converter (input)
   output = []
   if input >= 1000
     while input >= 1000
-    output << "M"
-    input -= 1000
+      output << "M"
+      input -= 1000
     end
   end
   if input >= 900
