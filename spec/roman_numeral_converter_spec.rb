@@ -41,4 +41,7 @@ describe ("roman_numeral_converter") do
   it('converts the value of three thousand nine hundred ninety-nine to the symbol MMMDMXCIX') do
     roman_numeral_converter(3999).should(eq("MMMDMXCIX"))
   end
+  it('askes for a new number if the input is greater than 3999') do
+    roman_numeral_converter(4500).should(eq(nil))
+  end
 end
